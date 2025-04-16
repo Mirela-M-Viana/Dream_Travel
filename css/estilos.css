@@ -234,13 +234,13 @@ footer i {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 100px;
     padding-bottom: 20px;
 }
 
 /* Estilização do card */
 .card{
-    background: #fff;
+    background: #ffff;
     width: 280px;
     border-radius: 10px;
     padding: 60px;
