@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Travel</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <script>
+        alert('Bem vindo ao nosso site');
+        
+        dia = new Array("Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado");
+        mes = new Array ("Janeiro", "Fevereiro", "Março", "Abril");
+        data = new Date;
+
+        //POP-UP DE DETALHES DO PRODUTO
+            function abrirDetalhes(nome,imagem,descricao){
+                const url = `../pops/pop_produtos.html?nome=${encodeURIComponent(nome)}&imagem=${encodeURIComponent(imagem)}&descricao=${encodeURIComponent(descricao)}`;
+                window.open(url, "_blank", "width= 800, height= 700");
+            }
+
+    </script> 
+
+</head>
+<body>
+    <header>
+        <div class="divHeader">
+        
+            <img src="../img/aviãoLogo.png" alt="Logo" title="Dream Travel" class="logo"/>
+
+            <nav>
+                <ul>
+                    <!-- itens menu -->
+                        <li><a href="../index.html">Home</a></li>
+                        <!-- <li><a href="pages/viagens.html">Conheça os Locais</a></li>
+                        <li><a href="pages/passeios.html">Passeios</a></li>
+                        <li><a href="pages/contatos.html">Contatos</a></li>  -->
+
+                        <!-- <li>Home</li> -->
+                        <li>Conheça os Locais</li>
+                        <li>Contatos</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="produto">
+        <h1 class="titulo_produtos">Produtos</h1>
+
+    <!-- <p>
+            <script>
+                document.write(dia[data.getDay()] + ", " + data.getDay() + " De " + mes[data.getMonth()] + " De " + data.getFullYear());
+            </script>
+        </p> -->
+                
+
+        <p class="text_produtos">Descubra uma seleção especial de hotéis para todos os gostos e bolsos. Do conforto acolhedor de pousadas charmosas à sofisticação de resorts 5 estrelas, 
+        nossos parceiros oferecem experiências únicas em cada destino. Encontre o lugar ideal para descansar, recarregar e aproveitar ao máximo sua viagem.</p>
+
+
+    </div>
+
+    <div class="container">
+        <script>
+            descPortoSol="Essa é a descrição do Hotel Porto Sol Beach";
+            descCopacabana="Essa é a descrição do Hotel Copacabana Palace";
+            descRosewood="Essa é a descrição do Hotel Rosewood São Paulo";
+            descBaiaSancho="Essa é a descrição da praia Baia de Sancho";
+            descPortoGalinhas="Essa é a descrição da praia Porto de Galinhas";
+            descJericoacoara="Essa é a descrição da praia Jericoacoara"
+
+        </script>
+        <div class="card" onclick="abrirDetalhes('Hotel Porto sol beach', '../img_produtos/porto sol beach.webp', descPortoSol)">
+            <img src="../img_produtos/porto sol beach.webp" alt="hotel porto sol beach">
+            <h2><strong>Hotel Porto sol beach</strong></h2>
+            <p>O Hotel Porto Sol Beach é um estabelecimento de 4 estrelas localizado na Praia da Cachoeira do Bom Jesus, no norte de Florianópolis, Santa Catarina.
+            Com acesso direto à praia, oferece aos hóspedes acomodações confortáveis com varanda, algumas com vista para o mar ou para a piscina.</p>
+            <span class="preco">R$ 3000/hospedagem</span>
+        </div>
+
+        <div class="card" onclick="abrirDetalhes('Hotel Copacabana Palace', '../img_produtos/copacabana palace.jpg', descCopacabana)">
+            <img src="../img_produtos/copacabana palace.jpg" alt="hotel copacabana palace">
+            <h2><strong>Hotel Copacabana Palace</strong></h2>
+            <p>Um dos hotéis mais icônicos do Brasil, o Copacabana Palace oferece luxo, história e sofisticação à beira da Praia de Copacabana. Com serviço impecável, 
+            gastronomia premiada e uma vista deslumbrante, é o destino ideal para quem busca uma experiência única no Rio de Janeiro.</p>
+            <span class="preco">R$ 4000/hospedagem</span>
+        </div>
+
+        <div class="card" onclick="abrirDetalhes('Hotel Rosewood São Paulo', '../img_produtos/rosewood sao paulo.jpeg', descRosewood)">
+            <img src="../img_produtos/rosewood sao paulo.jpeg" alt="hotel rosewood sao paulo">
+            <h2><strong>Hotel Rosewood São Paulo</strong></h2>
+            <p>O Rosewood São Paulo é um hotel de luxo situado no complexo histórico da Cidade Matarazzo, no coração de São Paulo. Inaugurado em 2022, o hotel ocupa um 
+            edifício histórico e uma torre com jardim vertical projetada pelo arquiteto Jean Nouvel, com interiores assinados por Philippe Starck.</p>
+            <span class="preco">R$ 2000/hospedagem</span>
+        </div>
+
+
+        <div class="card" onclick="abrirDetalhes('Praia Baía do Sancho', '../img_produtos/Baía do Sancho.webp', descBaiaSancho)">
+            <img src="../img_produtos/Baía do Sancho.webp" alt="Baía do Sancho – Fernando de Noronha, PE">
+            <h2><strong>Baía do Sancho – Fernando de Noronha, PE</strong></h2>
+            <p>Descubra o paraíso em forma de paisagem! A Baía do Sancho, eleita diversas vezes como a praia mais bonita do mundo, é um verdadeiro tesouro escondido em Fernando de Noronha. 
+            Com águas cristalinas, falésias impressionantes e uma vida marinha vibrante, esse destino é perfeito para quem busca conexão com a natureza e momentos inesquecíveis.</p>
+            <span class="preco">R$ 1000/hospedagem</span>
+        </div>
+
+        <div class="card" onclick="abrirDetalhes('Praia Porto de Galinhas', '../img_produtos/Porto de Galinhas.webp', descPortoGalinhas)">
+            <img src="../img_produtos/Porto de Galinhas.webp" alt="Porto de Galinhas (Ipojuca – PE)">
+            <h2><strong>Porto de Galinhas - Ipojuca, PE</strong></h2>
+            <p>Charme, cores e águas mornas te esperam em Porto de Galinhas, um dos destinos mais queridos do litoral brasileiro. Com suas piscinas naturais de águas cristalinas, jangadas 
+            coloridas e um clima que mistura tranquilidade e alegria, esse paraíso em Ipojuca é perfeito para quem quer relaxar ou se aventurar. </p>
+            <span class="preco">R$ 1500/hospedagem</span>
+        </div>
+
+        <div class="card" onclick="abrirDetalhes('Praia de Jericoacoara', '../img_produtos/Praia de Jericoacoara.webp', descJericoacoara)">
+            <img src="../img_produtos/Praia de Jericoacoara.webp" alt="Praia de Jericoacoara (Jijoca de Jericoacoara – CE)">
+            <h2><strong>Praia de Jericoacoara (Jijoca de Jericoacoara – CE)</strong></h2>
+            <p>Onde o sol se põe no mar e o vento desenha as dunas, nasce Jericoacoara – um refúgio rústico e encantador no coração do Ceará. Conhecida por suas paisagens de tirar o fôlego, águas 
+            calmas e atmosfera tranquila, Jeri é o destino ideal para quem busca liberdade, natureza e experiências autênticas. </p>
+            <span class="preco">R$ 2000/hospedagem</span>
+        </div>
+
+    </div>
+
+        
+     <footer>
+        <img src="../img/aviãoLogo.png" alt="Logo" class="logo_footer">
+        <p>Entre em contato conosco:  <a href="https://wa.me/551194002-8922"><i class="bi bi-whatsapp"></i></a>(11) 94002-8922 <a href="http://instagram.com/Dream_Travel"><i class="bi bi-instagram"></i></a>Dream_Travel  <a href="mailto:Dream.Travel@gmail.com"><i class="bi bi-envelope"></i></a>Dream.Travel@gmail.com</p>
+
+    </footer>
+
+    <script src="/pops/pop_produtos.html"/>
+    
+</body>
+        
+</html>
