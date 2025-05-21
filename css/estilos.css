@@ -297,3 +297,41 @@ footer i {
     text-align: center;
     background-color: #fafafa;
 }
+
+/* Estilização da POP de detalhes */
+.pop{
+    margin: 0;
+}
+
+.pop img {
+    width: 700;
+    height: 500;
+    padding-left: 7%;
+}
+
+.pop h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(29, 161, 238, 0.733);
+}
+
+.pop p{
+    padding: 2% 0 9% 7%;
+    margin: 0;
+    white-space: pre-line;
+}
+
+#nome-produto{
+    text-align: center;
+}
+
+/* VERIFICAR UMA FORMA DE DEIXAR A IMAGEM NO CENTRO */
+#imagem-produto{
+    width: 70%;
+    margin-left: 15%;
+}
+
+#descricao-produto{
+    text-align: center;
+}
