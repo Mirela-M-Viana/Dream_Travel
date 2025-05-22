@@ -335,3 +335,13 @@ footer i {
 #descricao-produto{
     text-align: center;
 }
+
+/* PAGINA DE CONTATOS */
+
+.titulo_Contatos{
+    margin-left: 2%;
+}
+
+.texto_contatos{
+    margin-left: 3%;
+}

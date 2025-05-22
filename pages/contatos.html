@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Travel</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+    <div class="divHeader">
+    
+        <img src="../img/aviãoLogo.png" alt="Logo" title="Dream Travel" class="logo"/>
+
+        <nav>
+            <ul>
+                <!-- itens menu -->
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/hospedagem.html">Hospedagens</a></li>
+                    <li><a href="../pages/viagens.html">Conheça os Locais</a></li>
+                    <!-- <li><a href="pages/passeios.html">Passeios</a></li>
+                    <li><a href="pages/contatos.html">Contatos</a></li>   -->
+
+                    <!-- <li>Home</li> -->
+                    <!-- <li>Conheça os Locais</li>
+                    <li>Contatos</li> -->
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <h1 class="titulo_Contatos">Contatos</h1>
+    <!-- <ul class="contatos_titulos">
+        <li class="contatos_item">Contatos</li>
+    </ul> -->
+
+    <p class="texto_contatos">Entre em contato conosco, deixe suas duvidas, sugestões e avaliações
+        <br><br>
+        Entre em contato pelas nossas redes ou no formulário a baixo</p>
+</main>
+
+<form id="frmContato">
+    <fieldset>
+        <legend>Mande sua Mensagem</legend>
+
+        <label>Nome Completo</label>
+        <input type="text" id="nome" required placeholder="Digite seu Nome Completo">
+
+        <label>E-mail</label>
+        <input type="text" id="email" required placeholder="Digite seu E-mail">
+
+        <label>Telefone</label>
+        <input type="text" id="tell" placeholder="Digite seu Telefone">
+
+        <label>Mensagem</label>
+        <textarea cols="70" rows="10"></textarea>
+
+        <label>Selecione o tipo de contato
+            <input type="radio" name="contato">E-mail
+            <input type="radio" name="contato">Telefone
+            <input type="radio" name="contato">WhatsApp
+        </label>
+
+        <label>Qual o Motivo do Seu Contato?</label>
+        <select>
+            <option>Selecione</option>
+            <option>Dúvida</option>
+            <option>Sujestão</option>
+            <option>Elogio</option>
+            <option>Reclamação</option>
+        </select>
+    </fieldset>
+        <label><input type="checkbox">Gostaria de receber nossas novidadees por E-mail</label>
+
+        <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>
