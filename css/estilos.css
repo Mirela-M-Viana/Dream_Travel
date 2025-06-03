@@ -280,14 +280,14 @@ footer i {
     margin: 8px 0;
 }
 
-.titulo_produtos {
+.titulo_produtos, .titulo_Passeios {
     font-size: 2rem;
     text-align: center;
     color: #1f1f1f;
     margin-bottom: 10px;
 }
 
-.text_produtos {
+.text_produtos, .text_Passeios {
     padding: 20px;
     border-radius: 8px;
     max-width: 900px;
