@@ -10,7 +10,7 @@
 </head>
 <body>
     <main>
-        <div>
+        <div class="pop">
             <h1 id="nome-produto">TITULO</h1>
             <img id="imagem-produto" src="" alt=""/>
             <p id="descricao-produto">DESCRICAO</p>
@@ -20,6 +20,8 @@
                 function getParametro(dado){
                     const urlParams = new URLSearchParams(window.location.search);
                     return urlParams.get(dado)
+
+
                     
                 }
 

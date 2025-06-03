@@ -19,7 +19,7 @@
                 <!-- itens menu -->
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../pages/hospedagem.html">Hospedagens</a></li>
-                    <li><a href="../pages/viagens.html">Conheça os Locais</a></li>
+                    <li><a href="../pages/passeios.html">Passeios</a></li>
                     <!-- <li><a href="pages/passeios.html">Passeios</a></li>
                     <li><a href="pages/contatos.html">Contatos</a></li>   -->
 
@@ -36,33 +36,40 @@
     <!-- <ul class="contatos_titulos">
         <li class="contatos_item">Contatos</li>
     </ul> -->
+    <div id="formRetorno" class="divRetorno">
+        <p id="textoRetorno" class="texto-contatos"></p>
+    </div>
 
-    <p class="texto_contatos">Entre em contato conosco, deixe suas duvidas, sugestões e avaliações
+    <div id="formulario">
+        <p class="texto_contatos">Entre em contato conosco, deixe suas duvidas, sugestões e avaliações
         <br><br>
         Entre em contato pelas nossas redes ou no formulário a baixo</p>
-</main>
-
+    
 <form id="frmContato">
     <fieldset>
         <legend>Mande sua Mensagem</legend>
 
         <label>Nome Completo</label>
-        <input type="text" id="nome" required placeholder="Digite seu Nome Completo">
+        <input type="text" id="nome" class="input-padrao" required placeholder="Digite seu Nome Completo">
 
         <label>E-mail</label>
-        <input type="text" id="email" required placeholder="Digite seu E-mail">
+        <input type="text" id="email" class="input-padrao" required placeholder="Digite seu E-mail">
 
         <label>Telefone</label>
-        <input type="text" id="tell" placeholder="Digite seu Telefone">
+        <input type="text" id="tel" class="input-padrao" placeholder="Digite seu Telefone">
 
         <label>Mensagem</label>
-        <textarea cols="70" rows="10"></textarea>
+        <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+        <br>
 
         <label>Selecione o tipo de contato
             <input type="radio" name="contato">E-mail
             <input type="radio" name="contato">Telefone
             <input type="radio" name="contato">WhatsApp
         </label>
+
+        <br>
 
         <label>Qual o Motivo do Seu Contato?</label>
         <select>
@@ -72,11 +79,24 @@
             <option>Elogio</option>
             <option>Reclamação</option>
         </select>
+
+        <br>
+
     </fieldset>
         <label><input type="checkbox">Gostaria de receber nossas novidadees por E-mail</label>
 
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar formulário" id="enviar" class="enviar">
 </form>
+</div>
+    
+</main>
+
+
+<footer>
+        <img src="../img/aviãoLogo.png" alt="Logo" class="logo_footer">
+        <p>Entre em contato conosco:  <a href="https://wa.me/551194002-8922"><i class="bi bi-whatsapp"></i></a>(11) 94002-8922 <a href="http://instagram.com/Dream_Travel"><i class="bi bi-instagram"></i></a>Dream_Travel  <a href="mailto:Dream.Travel@gmail.com"><i class="bi bi-envelope"></i></a>Dream.Travel@gmail.com</p>
+    </footer>
+    <script src="../js/form.js"></script>
 
 </body>
 </html>

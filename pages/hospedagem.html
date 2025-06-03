@@ -34,8 +34,7 @@
                 <ul>
                     <!-- itens menu -->
                         <li><a href="../index.html">Home</a></li>
-                        <li><a href="../pages/viagens.html">Conheça os Locais</a></li>
-                        <!-- <li><a href="pages/passeios.html">Passeios</a></li> -->
+                        <li><a href="../pages/passeios.html">Passeios</a></li>
                         <li><a href="../pages/contatos.html">Contatos</a></li> 
 
                         <!-- <li>Home</li> -->
@@ -64,12 +63,90 @@
 
     <div class="container">
         <script>
-            descPortoSol="Essa é a descrição do Hotel Porto Sol Beach";
-            descCopacabana="Essa é a descrição do Hotel Copacabana Palace";
-            descRosewood="Essa é a descrição do Hotel Rosewood São Paulo";
-            descBaiaSancho="Essa é a descrição da praia Baia de Sancho";
-            descPortoGalinhas="Essa é a descrição da praia Porto de Galinhas";
-            descJericoacoara="Essa é a descrição da praia Jericoacoara"
+           const descPortoSol = `
+                Localizado na belíssima Praia da Cachoeira do Bom Jesus, no norte da ilha de Florianópolis, o Hotel Porto Sol Beach é um charmoso estabelecimento 4 estrelas que combina conforto, excelente estrutura e uma localização privilegiada de frente para o mar.
+                Com acesso direto à praia, o hotel é a escolha perfeita para quem busca tranquilidade com o pé na areia e fácil deslocamento para outras praias da região, como Canasvieiras, Ponta das Canas e Lagoinha.
+                As acomodações são modernas, espaçosas e aconchegantes, equipadas com ar-condicionado, TV, frigobar e Wi-Fi gratuito. Todos os quartos possuem varanda privativa — algumas delas oferecem vista panorâmica para o mar ou para a piscina, proporcionando momentos relaxantes com paisagens encantadoras.
+
+                                        O hotel conta ainda com:
+                                    - Restaurante com culinária regional e internacional
+                                    - Piscina ao ar livre com bar de apoio
+                                    - Espaço kids e área de lazer para toda a família
+                                    - Salas para eventos corporativos e sociais
+                                    - Estacionamento gratuito
+
+                Seja para férias em família, viagens românticas ou escapadas de fim de semana, o Hotel Porto Sol Beach oferece uma estadia memorável com o melhor da hospitalidade catarinense.
+                `;
+
+            descCopacabana=`
+                Localizado em frente à icônica Praia de Copacabana, no coração do Rio de Janeiro, o Hotel Copacabana Palace, A Belmond Hotel é um luxuoso e histórico cinco estrelas que combina tradição, elegância e serviço impecável em uma das regiões mais famosas do mundo.
+                Com quase um século de história, o hotel é um verdadeiro símbolo do glamour carioca, recebendo hóspedes ilustres de todas as partes do mundo. Sua arquitetura neoclássica e sua localização privilegiada à beira-mar fazem dele um destino em si para quem busca uma experiência inesquecível no Rio.
+                As acomodações são sofisticadas, espaçosas e decoradas com requinte, oferecendo todo o conforto moderno em um ambiente clássico. Todos os quartos contam com ar-condicionado, Wi-Fi gratuito, TV de tela plana e banheiros revestidos em mármore. Algumas suítes oferecem vistas deslumbrantes para o mar e acesso exclusivo a áreas privativas do hotel.
+
+                                        O Copacabana Palace conta ainda com:
+                                    - Restaurantes premiados, incluindo o asiático Mee (com estrela Michelin) e o italiano Cipriani
+                                    - Piscina semiolímpica com serviço completo de bar e atendimento personalizado
+                                    - Spa com tratamentos exclusivos de bem-estar e beleza
+                                    - Academia completa e quadra de tênis
+                                    - Salões refinados para eventos sociais e corporativos
+                                    - Serviço de concierge e atendimento cinco estrelas
+
+                Ideal para viagens românticas, lua de mel, celebrações especiais ou simplesmente para quem deseja aproveitar o melhor do Rio com conforto e sofisticação, o Copacabana Palace oferece uma estadia memorável em um dos endereços mais elegantes do Brasil.
+            `;
+            descRosewood=`
+                Localizado no coração pulsante da capital paulista, na região da Avenida Paulista e integrado ao histórico edifício da antiga Maternidade Condessa Filomena Matarazzo, o Rosewood São Paulo é um hotel de luxo cinco estrelas que combina arte, sofisticação e sustentabilidade em um projeto arquitetônico único.
+                Com design assinado pelo renomado arquiteto Jean Nouvel e interiores criados por Philippe Starck, o hotel é um verdadeiro marco da hotelaria de alto padrão no Brasil, unindo história, cultura e modernidade em uma das áreas mais vibrantes da cidade.
+                As acomodações são elegantes e contemporâneas, com materiais nobres, obras de arte brasileiras e tecnologia de ponta. Os quartos e suítes oferecem ar-condicionado, Wi-Fi gratuito, smart TV, minibar gourmet e vistas para o Parque Matarazzo ou para a skyline de São Paulo — um verdadeiro refúgio urbano.
+
+                                        O Rosewood São Paulo conta ainda com:
+                                    - Seis opções gastronômicas, incluindo restaurantes autorais e bares sofisticados
+                                    - Duas piscinas, sendo uma no rooftop com vista panorâmica da cidade
+                                    - Spa Asaya com experiências de bem-estar integrativo
+                                    - Academia completa e estúdios de yoga e meditação
+                                    - Espaços exclusivos para eventos, casamentos e reuniões
+                                    - Galeria de arte permanente com obras de mais de 50 artistas brasileiros
+
+                Seja para uma viagem de negócios, uma celebração especial ou uma imersão cultural na maior cidade do Brasil, o Rosewood São Paulo oferece uma experiência autêntica, luxuosa e memorável no coração da metrópole.
+            `;
+            descBaiaSancho=`
+                Localizada no paradisíaco arquipélago de Fernando de Noronha, em Pernambuco, a Baía do Sancho é uma das praias mais deslumbrantes do Brasil e frequentemente eleita entre as melhores do mundo por rankings internacionais.
+                Com acesso controlado e preservação rigorosa, a praia oferece uma experiência única de contato com a natureza em seu estado mais puro. Cercada por falésias cobertas de vegetação nativa, o visual impressiona logo na chegada — o acesso se dá por uma trilha e uma escadaria embutida nas rochas, o que torna a chegada à faixa de areia ainda mais especial.
+                As águas são cristalinas, de um tom turquesa intenso, ideais para banho e snorkeling. A vida marinha é abundante: tartarugas, golfinhos, cardumes coloridos e até pequenos tubarões podem ser observados com facilidade, principalmente durante mergulhos com máscara e snorkel.
+
+                                        A Baía do Sancho oferece:
+                                    - Areia dourada e fina, perfeita para relaxar com tranquilidade
+                                    - Mirantes com vista panorâmica para fotos inesquecíveis
+                                    - Águas calmas e transparentes, ideais para nadar e mergulhar
+                                    - Riqueza de fauna e flora marinha, com acesso limitado para preservar o ecossistema
+                                    - Proximidade de outras atrações naturais, como a Baía dos Porcos e o Morro Dois Irmãos
+
+                Perfeita para casais, aventureiros e amantes da natureza, a Baía do Sancho é um destino imperdível para quem visita Fernando de Noronha — um verdadeiro santuário ecológico no coração do Atlântico.
+            `;
+            descPortoGalinhas=`
+                    Localizado no município de Ipojuca, a cerca de 60 km de Recife, Porto de Galinhas é um dos destinos mais encantadores do litoral nordestino e do Brasil. Famoso por suas piscinas naturais de águas mornas e cristalinas, formadas por recifes de coral, o local é perfeito para banho, mergulho e passeios de jangada que permitem observar peixes coloridos e a beleza do fundo do mar.
+                    A vila de Porto de Galinhas é charmosa e vibrante, com ruas de paralelepípedo, lojinhas de artesanato, bares, restaurantes e um clima acolhedor o ano inteiro. A região também se destaca pela gastronomia regional, com pratos à base de frutos do mar e sabores típicos do Nordeste.
+
+                                        Porto de Galinhas conta com:
+                                    - Excelente rede de hotéis, resorts e pousadas para todos os estilos e orçamentos
+                                    - Opções de ecoturismo, buggy tours e passeios de catamarã
+                                    - Vida noturna tranquila, com bares e música ao vivo
+                                    - Atividades para famílias, casais e grupos de amigos
+                    Seja para relaxar, curtir a natureza ou se encantar com a cultura pernambucana, Porto de Galinhas é um destino completo que conquista todos que visitam — e que sempre dá vontade de voltar.
+
+
+                    `;
+            descJericoacoara=`
+                Localizada no litoral oeste do Ceará, dentro de uma área de proteção ambiental, a Praia de Jericoacoara — ou simplesmente Jeri — é um dos destinos mais fascinantes e rústicos do Brasil, conhecida por suas paisagens únicas, dunas douradas, mar cristalino e pôr do sol inesquecível.
+                Com ruas de areia e um clima descontraído, Jericoacoara mantém o charme de uma vila de pescadores, mesmo sendo hoje um dos pontos turísticos mais desejados do país. 
+
+                                        Jericoacoara conta com:
+                                    - Pousadas charmosas, hotéis boutique e opções pé na areia
+                                    - Restaurantes com culinária regional e internacional
+                                    - Vida noturna animada, com forró, música ao vivo e bares à beira-mar
+                                    - Atividades como kitesurf, windsurf, stand-up paddle e cavalgadas na praia
+                
+                Sem postes de luz nas ruas e com uma vibe boêmia e tranquila, Jericoacoara oferece uma experiência autêntica, onde o luxo está na simplicidade e na conexão com a natureza. É o destino ideal para quem busca beleza, liberdade e momentos inesquecíveis em um dos cenários mais incríveis do Brasil.
+            `
 
         </script>
         <div class="card" onclick="abrirDetalhes('Hotel Porto sol beach', '../img_produtos/porto sol beach.webp', descPortoSol)">
