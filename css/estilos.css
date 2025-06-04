@@ -413,3 +413,19 @@ fieldset{
 .formRetorno p{
     font-size: 24px;
 }
+
+.texto-contatos{
+    margin-left: 20px;
+}
+
+
+
+.body_contatos{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main_contatos{
+    flex: 1;
+}
