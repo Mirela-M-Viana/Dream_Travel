@@ -434,6 +434,25 @@ fieldset{
 /* Agendamentos */
 
 .main_agendamento{
-   background: linear-gradient( rgb(255, 255, 255), rgb(202, 218, 243));
+   /* background: linear-gradient( rgb(255, 255, 255), rgb(202, 218, 243)); */
    text-align: center;
+}
+
+/* Tabela agendamentos */
+table{
+    width: 100%;
+    margin-bottom: 2%;
+    table-layout: fixed;
+}
+
+th{
+    font-weight: bold;
+    background-color:   rgba(29, 161, 238, 0.658);
+}
+
+th, td{
+    padding: 10px;
+    margin: 0;
+    border: 1px solid black;
+    text-align: center;
 }

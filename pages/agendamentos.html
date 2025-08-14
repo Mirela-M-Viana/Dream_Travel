@@ -32,10 +32,43 @@
     <!-- <ul class="agendamento_titulos">
         <li class="agendamentos_item">Agendamento</li>
     </ul> -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Local</th>
+                <th>Hotel</th>
+                <th>Qtd Passagem</th>
+                <th>Valor Passagem</th>
+                <th>Valor Hospedagem</th>
+                <th>Valor Total</th>
+            </tr>
+        </thead>
+        <tbody class="tabela-cliente">
+            <tr class="cliente">
+            <td class="nome">Natan P.</td>
+            <td class="local">Florianópolis, Santa Catarina</td>
+            <td class="hotel">Hotel Porto sol beach</td>
+            <td class="qtd">2</td>
+            <td class="valor-passagem">1500</td>
+            <td class="valor-hotel">6000</td>
+            <td class="valor-total"></td>
+        </tr>
+        </tbody>
+    </table>
         </main>
+
 <footer>
         <img src="../img/aviãoLogo.png" alt="Logo" class="logo_footer">
         <p>Entre em contato conosco:  <a href="https://wa.me/551194002-8922"><i class="bi bi-whatsapp"></i></a>(11) 94002-8922 <a href="http://instagram.com/Dream_Travel"><i class="bi bi-instagram"></i></a>Dream_Travel  <a href="mailto:Dream.Travel@gmail.com"><i class="bi bi-envelope"></i></a>Dream.Travel@gmail.com</p>
 </footer>
+
+<script>
+    let mult_qtd_passagem = document.querySelector(".qtd").textContent * document.querySelector(".valor-passagem").textContent
+    let valorHotel = parseInt(document.querySelector(".valor-hotel").textContent)
+    document.querySelector(".valor-total").textContent = mult_qtd_passagem + valorHotel
+
+</script>
 </body>
 </html>
