@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,67 +9,129 @@
     <title>Dream Travel</title>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body>
-    
 
-<body class="body_contatos">
-    <header>
-    <div class="divHeader">
-    
-        <img src="../img/aviãoLogo.png" alt="Logo" title="Dream Travel" class="logo"/>
-       <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../pages/hospedagem.html">Hospedagens</a></li>
-                    <li><a href="../pages/passeios.html">Passeios</a></li>
-                    <li><a href="../pages/contatos.html">Contatos</a></li>  
-                        
-                </ul>
-            </nav>
-    </div>
-</header>
+<body>
+
+
+    <body class="body_contatos">
+        <header>
+            <div class="divHeader">
+
+                <img src="../img/aviãoLogo.png" alt="Logo" title="Dream Travel" class="logo" />
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pages/hospedagem.html">Hospedagens</a></li>
+                        <li><a href="../pages/passeios.html">Passeios</a></li>
+                        <li><a href="../pages/contatos.html">Contatos</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <main class="main_agendamento">
-    <h1 class="titulo_agendamento">Agendamentos</h1>
-    <!-- <ul class="agendamento_titulos">
+            <h1 class="titulo_agendamento">Agendamentos</h1>
+            <!-- <ul class="agendamento_titulos">
         <li class="agendamentos_item">Agendamento</li>
     </ul> -->
 
-    <table>
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Local</th>
-                <th>Hotel</th>
-                <th>Qtd Passagem</th>
-                <th>Valor Passagem</th>
-                <th>Valor Hospedagem</th>
-                <th>Valor Total</th>
-            </tr>
-        </thead>
-        <tbody class="tabela-cliente">
-            <tr class="cliente">
-            <td class="nome">Natan P.</td>
-            <td class="local">Florianópolis, Santa Catarina</td>
-            <td class="hotel">Hotel Porto sol beach</td>
-            <td class="qtd">2</td>
-            <td class="valor-passagem">1500</td>
-            <td class="valor-hotel">6000</td>
-            <td class="valor-total"></td>
-        </tr>
-        </tbody>
-    </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Local</th>
+                        <th>Hotel</th>
+                        <th>Qtd Passagem</th>
+                        <th>Valor Passagem</th>
+                        <th>Valor Hospedagem</th>
+                        <th>Valor Total</th>
+                    </tr>
+                </thead>
+                <tbody class="tabela-cliente">
+                    <tr class="cliente">
+                        <td class="nome">Natan P.</td>
+                        <td class="local">Florianópolis, Santa Catarina</td>
+                        <td class="hotel">Hotel Porto sol beach</td>
+                        <td class="qtd">2</td>
+                        <td class="valor-passagem">1500</td>
+                        <td class="valor-hotel">6000</td>
+                        <td class="valor-total"></td>
+                    </tr>
+
+                    <tr class="cliente">
+                        <td class="nome">Maria V.</td>
+                        <td class="local">Copacabana, Rio de Janeiro</td>
+                        <td class="hotel">Hotel Copacabana Palace</td>
+                        <td class="qtd">1</td>
+                        <td class="valor-passagem">1000</td>
+                        <td class="valor-hotel">4000</td>
+                        <td class="valor-total"></td>
+                    </tr>
+
+                    <tr class="cliente">
+                        <td class="nome">Carlos V.</td>
+                        <td class="local">Porte de Galinhas - Ipojuca, PE</td>
+                        <td class="hotel">Sem Hotel definido</td>
+                        <td class="qtd">3</td>
+                        <td class="valor-passagem">1000</td>
+                        <td class="valor-hotel">0</td>
+                        <td class="valor-total"></td>
+                    </tr>
+
+                    <tr class="cliente">
+                        <td class="nome">Tamires S.</td>
+                        <td class="local">Baía do Sancho - Fernando de Noronha, PE</td>
+                        <td class="hotel">Sem Hotel definido</td>
+                        <td class="qtd">2</td>
+                        <td class="valor-passagem">1500</td>
+                        <td class="valor-hotel">0</td>
+                        <td class="valor-total"></td>
+                    </tr>
+                </tbody>
+
+            </table>
         </main>
 
-<footer>
-        <img src="../img/aviãoLogo.png" alt="Logo" class="logo_footer">
-        <p>Entre em contato conosco:  <a href="https://wa.me/551194002-8922"><i class="bi bi-whatsapp"></i></a>(11) 94002-8922 <a href="http://instagram.com/Dream_Travel"><i class="bi bi-instagram"></i></a>Dream_Travel  <a href="mailto:Dream.Travel@gmail.com"><i class="bi bi-envelope"></i></a>Dream.Travel@gmail.com</p>
-</footer>
+        <footer>
+            <img src="../img/aviãoLogo.png" alt="Logo" class="logo_footer">
+            <p>Entre em contato conosco: <a href="https://wa.me/551194002-8922"><i class="bi bi-whatsapp"></i></a>(11)
+                94002-8922 <a href="http://instagram.com/Dream_Travel"><i class="bi bi-instagram"></i></a>Dream_Travel
+                <a href="mailto:Dream.Travel@gmail.com"><i class="bi bi-envelope"></i></a>Dream.Travel@gmail.com</p>
+        </footer>
 
-<script>
-    let mult_qtd_passagem = document.querySelector(".qtd").textContent * document.querySelector(".valor-passagem").textContent
-    let valorHotel = parseInt(document.querySelector(".valor-hotel").textContent)
-    document.querySelector(".valor-total").textContent = mult_qtd_passagem + valorHotel
+        <script>
+            //Código para calcular uma linha
+            // let mult_qtd_passagem = document.querySelector(".qtd").textContent * document.querySelector(".valor-passagem").textContent
+            // let valorHotel = parseInt(document.querySelector(".valor-hotel").textContent)
+            // document.querySelector(".valor-total").textContent = mult_qtd_passagem + valorHotel
 
-</script>
-</body>
+            //Captura todas as encomendas para calcular o total
+            var clientes = document.querySelectorAll(".cliente");
+
+    for (var count = 0; count < clientes.length; count++) {
+        // Captura o cliente atual
+        var clientesGeral = clientes[count];
+
+        // Captura a quantidade de passagens
+        var qtdPassagem = parseInt(clientesGeral.querySelector(".qtd").textContent);
+
+        // Captura o valor da passagem
+        var valorPassagem = parseInt(clientesGeral.querySelector(".valor-passagem").textContent);
+
+        // Captura o valor do hotel
+        var valorHotel = parseInt(clientesGeral.querySelector(".valor-hotel").textContent);
+
+        // Calcula o total da passagem
+        var totalPassagem = qtdPassagem * valorPassagem;
+
+        // Calcula o valor total (passagem + hotel)
+        var totalCliente = totalPassagem + valorHotel;
+
+        // Exibe o valor total no campo correspondente
+        clientesGeral.querySelector(".valor-total").textContent = totalCliente;
+    }
+
+        </script>
+    </body>
+
 </html>
