@@ -82,7 +82,7 @@
                         <td class="nome">Tamires S.</td>
                         <td class="local">Baía do Sancho - Fernando de Noronha, PE</td>
                         <td class="hotel">Sem Hotel definido</td>
-                        <td class="qtd">2</td>
+                        <td class="qtd">l</td>
                         <td class="valor-passagem">1500</td>
                         <td class="valor-hotel">0</td>
                         <td class="valor-total"></td>
@@ -99,39 +99,7 @@
                 <a href="mailto:Dream.Travel@gmail.com"><i class="bi bi-envelope"></i></a>Dream.Travel@gmail.com</p>
         </footer>
 
-        <script>
-            //Código para calcular uma linha
-            // let mult_qtd_passagem = document.querySelector(".qtd").textContent * document.querySelector(".valor-passagem").textContent
-            // let valorHotel = parseInt(document.querySelector(".valor-hotel").textContent)
-            // document.querySelector(".valor-total").textContent = mult_qtd_passagem + valorHotel
-
-            //Captura todas as encomendas para calcular o total
-            var clientes = document.querySelectorAll(".cliente");
-
-    for (var count = 0; count < clientes.length; count++) {
-        // Captura o cliente atual
-        var clientesGeral = clientes[count];
-
-        // Captura a quantidade de passagens
-        var qtdPassagem = parseInt(clientesGeral.querySelector(".qtd").textContent);
-
-        // Captura o valor da passagem
-        var valorPassagem = parseInt(clientesGeral.querySelector(".valor-passagem").textContent);
-
-        // Captura o valor do hotel
-        var valorHotel = parseInt(clientesGeral.querySelector(".valor-hotel").textContent);
-
-        // Calcula o total da passagem
-        var totalPassagem = qtdPassagem * valorPassagem;
-
-        // Calcula o valor total (passagem + hotel)
-        var totalCliente = totalPassagem + valorHotel;
-
-        // Exibe o valor total no campo correspondente
-        clientesGeral.querySelector(".valor-total").textContent = totalCliente;
-    }
-
-        </script>
+        <script src="../js/agendamentos.js"></script>
     </body>
 
 </html>
