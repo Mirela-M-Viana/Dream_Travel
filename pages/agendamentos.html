@@ -73,7 +73,7 @@
                         <td class="local">Porte de Galinhas - Ipojuca, PE</td>
                         <td class="hotel">Sem Hotel definido</td>
                         <td class="qtd">3</td>
-                        <td class="valor-passagem">1000</td>
+                        <td class="valor-passagem">0</td>
                         <td class="valor-hotel">0</td>
                         <td class="valor-total"></td>
                     </tr>
@@ -92,6 +92,69 @@
             </table>
         </main>
 
+        <main class="main_agendamento">
+    <h1 class="titulo_agendamento">Adicionar Encomenda</h1>
+
+    <div id="formRetorno" class="divRetorno">
+        <p id="textoRetorno" class="texto-contatos"></p>
+    </div>
+    
+<form id="frmAgendamento">
+    <fieldset>
+
+        <label>Nome Completo</label>
+        <input type="text" id="nome" class="input-padrao" required placeholder="Digite seu Nome Completo">
+
+        <br>
+
+         <label>Digite o Local da Viagem</label>
+         <select>
+            <option>Selecione</option>
+            <option>Santa Catarina</option>
+            <option>Rio de Janeiro</option>
+            <option>São Paulo</option>
+            <option>Pernambuco</option>
+        </select>
+        
+        <br>
+
+        <label>Digite o Hotel da Viagem</label>
+         <select>
+            <option>Selecione</option>
+            <option>Hotel Porto sol beach</option>
+            <option>Hotel Copacabana Palace</option>
+            <option>Hotel Rosewood São Paulo</option>
+            <option>Outros</option>
+        </select>
+
+        <br>
+
+        <label>Quantidade de Passagens</label>
+        <input type="text" id="qtdP" class="input-padrao" required placeholder="Digite a Quantidade de Passagens">
+
+        <br>
+
+        <label>Valor da Passagem</label>
+        <input type="text" id="valorP" class="input-padrao" placeholder="Digite o Valor da Passagem">
+
+        <label>Digite o valor do Hotel</label>
+       <input type="text" id="ValorH" class="input-padrao" required placeholder="Digite o Valor do Hotel">
+        <br>
+
+        <label>Qual o Motivo do Seu Contato?</label>
+       <textarea cols="70" rows="10" id="motivo" class="input-padrao" required placeholder="Digite o Motivo do Seu Contato"></textarea>
+
+        <br>
+
+    </fieldset>
+        <label><input type="checkbox">Gostaria de receber nossas novidadees por E-mail</label>
+
+        <button id="enviar_form" class="enviar">Enviar formulário</button>
+</form>
+</div>
+    
+</main>
+
         <footer>
             <img src="../img/aviãoLogo.png" alt="Logo" class="logo_footer">
             <p>Entre em contato conosco: <a href="https://wa.me/551194002-8922"><i class="bi bi-whatsapp"></i></a>(11)
@@ -100,6 +163,7 @@
         </footer>
 
         <script src="../js/agendamentos.js"></script>
+        <script src="../js/formAgend.js"></script>
     </body>
 
 </html>

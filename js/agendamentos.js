@@ -25,7 +25,9 @@
         if(qtdPassagem < 1 || isNaN(qtdPassagem)){
             clientesGeral.querySelector(".qtd").textContent = "Quantidade inválida"
             clientesGeral.querySelector(".qtd").style.color= "red";
-        }else {
+        }
+        
+        else {
             //calcula o valor total
             clientesGeral.querySelector(".valor-total").textContent = calcularTotal(qtdPassagem,valorPassagem,valorHotel);
 

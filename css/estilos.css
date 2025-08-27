@@ -347,8 +347,8 @@ footer i {
     margin-left: 3%;
 }
 
-/* sessão contatos */
-.titulo_Contatos{
+/* sessão contatos e form agendamento */
+.titulo_Contatos, .titulo_agendamento{
     font-size: 40px;
     font-weight: bold;
     margin-left: 50px ;
@@ -426,7 +426,7 @@ fieldset{
     min-height: 100vh;
 }
 
-.main_contatos{
+.main_contatos, .main_agendamento {
     flex: 1;
 }
 
@@ -455,4 +455,23 @@ th, td{
     margin: 0;
     border: 1px solid black;
     text-align: center;
+}
+
+.info_invalida {
+    background-color: red;
+    color: white;
+}
+
+#enviar_form{
+    width: 40%;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    background: rgba(29, 161, 238, 0.733);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s all;
+    cursor: pointer;
+
 }
